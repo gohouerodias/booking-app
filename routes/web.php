@@ -14,8 +14,7 @@ Route::prefix('/bookings')->group(function () {
 });
 
 Route::get('/ping', function () {
-    return response()->json([
-        'message_fr' => 'Ça marche 🚀',       // FR: Ça marche
+    return response()->json([   
         'message_ru' => 'Работает 🚀',       // RU: Работает
         'status'     => 'ok'
     ]);
