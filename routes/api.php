@@ -1,8 +1,6 @@
 <?php
-use App\Http\Controllers\API\ArticleController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\API\BookingController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BookingController;
 
 
 
