@@ -28,4 +28,13 @@ class BookingRequest extends FormRequest
             'ends_at'   => ['required', 'date', 'after:starts_at'],
         ];
     }
+    public function messages()
+    {
+        return [
+            'user_id.required' => 'RU: Пользователь обязателен',
+            'bed.in'           => 'RU: Кушетка должна быть 1 или 2',
+            'starts_at.before' => 'RU: Начало должно быть раньше конца',
+            'ends_at.after'    => 'RU: Конец должен быть позже начала',
+        ];
+    }
 }
